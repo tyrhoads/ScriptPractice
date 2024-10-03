@@ -1,3 +1,31 @@
 body {
-    background-color:#393E41;
+    background-color:#383E40;
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    display: grid;
+   
+    
+}
+
+.logo{
+    align-items: center;
+    font-size:50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.userInput{
+    width: 100px;
+    height:  100px;
+    background: aquamarine;
+    margin-right: auto;
+    margin-left:auto ;
+}
+.explain{
+    width: 100px;
+    height:  100px;
+    background: blue;
+    margin-right: auto;
+    margin-left:auto ;
 }

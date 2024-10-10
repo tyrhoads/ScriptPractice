@@ -3,29 +3,60 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     height: 100%;
-    display: grid;
+    
    
     
 }
 
-.logo{
+.content{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo{
+    
     font-size:50px;
     font-weight: bolder;
     text-align: center;
+    color: rgb(219, 219, 219);
+   
+    padding: 0;
+    margin-bottom:0;
+   
+    
 }
 
 .userInput{
-    width: 100px;
-    height:  100px;
-    background: aquamarine;
-    margin-right: auto;
-    margin-left:auto ;
+    display: flex;
+    width: 500px;
+    height:  200px;
+    background: rgb(255, 255, 255);
+    margin-bottom:1%;
+    border-radius: 25px;
 }
 .explain{
-    width: 100px;
-    height:  100px;
-    background: blue;
-    margin-right: auto;
-    margin-left:auto ;
+    width: min(100vw, 450px);
+    width: 500px;
+    height:  150px;
+    background: rgb(225, 191, 2);
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.explain{
+    
+    vertical-align: middle;
+    text-align: center;
+    
 }

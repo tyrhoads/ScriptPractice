@@ -31,19 +31,23 @@ body {
 }
 
 .userInput{
+    width: min(100vw, 450px);
+    min-height: 100px;
+    border-radius: 20px;
     display: flex;
-    width: 500px;
-    height:  200px;
-    background: rgb(255, 255, 255);
-    margin-bottom:1%;
-    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 6px 6px #002ead;
 }
 .explain{
     width: min(100vw, 450px);
     width: 500px;
     height:  150px;
     background: rgb(225, 191, 2);
-    width: min(100vw, 450px);
     font-size: 1.3rem;
     min-height: 140px;
     margin-top: 20px;
@@ -59,4 +63,19 @@ body {
     vertical-align: middle;
     text-align: center;
     
+}
+
+button{
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+input{
+    cursor:default;
+    border: none;
+    background-color: #b1b1b1;
+    color: white;
+    margin: 10px;
 }

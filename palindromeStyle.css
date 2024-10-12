@@ -22,8 +22,7 @@ body {
     font-size:50px;
     font-weight: bolder;
     text-align: center;
-    color: rgb(219, 219, 219);
-   
+    color: #D3D0CB;
     padding: 0;
     margin-bottom:0;
    
@@ -40,42 +39,45 @@ body {
     flex-wrap: wrap;
     padding: 20px;
     margin: 10px 0;
-    background-color: rgb(209, 209, 209);
-    box-shadow: 0 6px 6px #002ead;
+    background-color: #D3D0CB;
+    box-shadow: 0 6px 6px #212425;
+    color: #383E40;
 }
 .explain{
     width: min(100vw, 450px);
     width: 500px;
     height:  150px;
-    background: rgb(225, 191, 2);
+    background:#57886C;
+    color:#D3D0CB;
     font-size: 1.3rem;
     min-height: 140px;
     margin-top: 20px;
-    padding: 20px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-.explain{
-    
+    box-shadow: 0 6px 6px #212425;
     vertical-align: middle;
     text-align: center;
-    
-}
+  }
+
+
 
 button{
     cursor: pointer;
     border-radius: 15px;
     border: none;
     padding: 10px;
+    background-color: #57886C;
+    color: #D3D0CB;
+    box-shadow:0 6px 6px #383E40;
 }
 
 input{
     cursor:default;
     border: none;
     background-color: #b1b1b1;
-    color: white;
+    color: #383E40;
     margin: 10px;
+    border-radius: 3px;
 }

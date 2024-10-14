@@ -1,3 +1,6 @@
+*{
+    font-family:futura ;
+}
 body {
     background-color:#383E40;
     max-width: 100%;
@@ -45,11 +48,11 @@ body {
 }
 .explain{
     width: min(100vw, 450px);
-    width: 500px;
-    height:  150px;
+    width: 445px;
+    height:  125px;
     background:#57886C;
     color:#D3D0CB;
-    font-size: 1.3rem;
+    font-size: 1rem;
     min-height: 140px;
     margin-top: 20px;
     border-radius: 20px;
@@ -59,6 +62,7 @@ body {
     box-shadow: 0 6px 6px #212425;
     vertical-align: middle;
     text-align: center;
+    padding: 0px 25px 0px 25px;
   }
 
 
@@ -67,7 +71,9 @@ button{
     cursor: pointer;
     border-radius: 15px;
     border: none;
-    padding: 10px;
+    font-family: futura;
+    font-weight: bold;
+    padding:10px 20px 10px 20px;
     background-color: #57886C;
     color: #D3D0CB;
     box-shadow:0 6px 6px #383E40;
@@ -80,4 +86,15 @@ input{
     color: #383E40;
     margin: 10px;
     border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#intructions{
+    font-size: 1.25rem;
+}
+
+.explainText{
+    font-size: 1.25rem;
 }

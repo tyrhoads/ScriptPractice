@@ -1,5 +1,9 @@
 *{
     font-family:futura ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 body {
     background-color:#383E40;
@@ -27,15 +31,17 @@ body {
     text-align: center;
     color: #D3D0CB;
     padding: 0;
-    margin-bottom:0;
+    margin-bottom:25px;
    
     
 }
-
+.hidden {
+    display: none;
+  }
 .userInput{
     width: min(100vw, 450px);
     min-height: 100px;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +61,7 @@ body {
     font-size: 1rem;
     min-height: 140px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,4 +103,11 @@ input{
 
 .explainText{
     font-size: 1.25rem;
+}
+
+#result{
+    overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: black;
 }

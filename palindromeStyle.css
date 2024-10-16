@@ -107,7 +107,9 @@ input{
 
 #result{
     overflow-y: auto;
-  word-wrap: break-word;
-  min-height: 50px;
-  color: black;
+    word-wrap: break-word;
+     min-height: 50px;
+    color: black;
+    padding-top: 15px;
+    font-size: 25px;
 }

@@ -51,9 +51,18 @@ function shuffle(array)
 };
 
 function santa (array, shuffledArray){
+    
+    result.replaceChildren();
     shuffle(shuffledArray);
- console.log(array);
- console.log(shuffledArray);
+    for(let i =0; i < array.length; i++){
+        const fTag = document.createElement('p');
+        fTag.className = 'shuffle-input';
+        fTag.innerHTML = `${array[i]}  got  ${shuffledArray[i]}  `;
+        result.appendChild(fTag);
+    }
+    
+   
+    
 }
 
 
@@ -61,7 +70,7 @@ function santa (array, shuffledArray){
 
 checkButton.addEventListener("click", () =>{
     getText(userInput.value); 
-    santa(people,peopleShuffled );
+    
     userInput.value="";
     
 });
@@ -71,7 +80,14 @@ userInput.addEventListener("keypress", function(event) {
   // If the user presses the "Enter" key
   if (event.key === "Enter") {
     getText(userInput.value);
-    santa(people,peopleShuffled );
+   
     userInput.value="";
   }
+});
+
+sButton.addEventListener("click", () =>{
+    
+   
+    santa(people,peopleShuffled );
+    
 });

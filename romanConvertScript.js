@@ -29,10 +29,24 @@ const convertToRoman = num => {
 
 }
 
+const isValid = (num) => {
+    if (num <1 || num >3999){
+        output.removeAttribute("hidden")
+        output.innerText = ("please enter a number 1-3999")
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
 convertButton.addEventListener("click", () =>{
     const number = document.getElementById('number').value;
     const int = parseInt(number,10)
-    output.innerText = int;
-    output.removeAttribute("hidden")
+    if (isValid(int)){
+        output.innerText = int;
+        output.removeAttribute("hidden")
+    }
+    
     
 });

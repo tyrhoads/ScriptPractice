@@ -31,11 +31,11 @@ const convertToRoman = num => {
 
 const isValid = (num) => {
     if (num <1) {
-        output.innerText = ("please enter a number over 1")
+        output.innerText = ("Please enter a number greater than or equal to 1")
         return false;
     }
     else if( num >3999){
-        output.innerText = ("please enter a number under 3999")
+        output.innerText = ("Please enter a number less than or equal to 3999")
         return false;
     }
     else{

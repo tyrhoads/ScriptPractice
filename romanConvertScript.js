@@ -2,6 +2,7 @@
 const convertButton = document.getElementById('convert-btn');
 const output = document.getElementById('output');
 
+
 const convertToRoman = num => {
     const ref = [
       ['M', 1000],
@@ -26,9 +27,9 @@ const convertToRoman = num => {
         num -= arr[1];
       }
     });
-
-}
-
+  
+    return res.join('');
+  };
 const isValid = (num) => {
     if (num <1) {
         output.innerText = ("Please enter a number greater than or equal to 1")
@@ -53,9 +54,7 @@ convertButton.addEventListener("click", () =>{
     const int = parseInt(number,10)
     output.removeAttribute("hidden")
     if (isValid(int)){
-        output.innerText = int;
+        output.innerText = convertToRoman(int);
         
     }
-    
-    
 });

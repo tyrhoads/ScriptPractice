@@ -38,6 +38,11 @@ const isValid = (num) => {
         output.innerText = ("Please enter a number less than or equal to 3999")
         return false;
     }
+    else if(!Number.isInteger(num)){
+        output.innerText = ("Please enter a valid number")
+        return false;
+    }
+    
     else{
         return true;
     }
